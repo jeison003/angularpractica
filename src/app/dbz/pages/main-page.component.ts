@@ -14,6 +14,7 @@ export class MainPagesComponent {
 
   }
   get characters(): Character[]{
+    // los [...data] hace referencia a que crea una copia de los character, asi si se modifican no afectana los originales
     return [...this.DbzService.characters];
   }
 
